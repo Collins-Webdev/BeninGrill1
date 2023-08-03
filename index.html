@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>BéninGrill - Mets rafinés locaux et d'ailleurs</title>
+  <meta name="title" content="Grilli - Plats savoureux & rafinés">
+  <meta name="description" content="Site vitrine du restaurant BeninGrill">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+
+
+<style>
+   #left-button,
+  #right-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1271d7; /* Change the color to your preference */
+    color: #ffffff; /* Change the text color to your preference */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjust this value to control the space between the buttons and the testimonials */
+  }
+  
+  .container.erts {
+    flex: 0 0 100%; /* Each testimonial takes 100% width in the flex container */
+  }
+</style>
+
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">BeninGrill</p>
+  </div>
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Restaurant BeninGrill, Calavi Arconville, Cotonou 9578, Bénin
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2"> 
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Ouverture : 8h00 à 22h00</span>
+      </div>
+
+      <a href="tel:+22953043748" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+229 53 04 37 48</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurantgrilli.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">reservation@restaurantgrillibénin.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Accueil">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Accueil</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">À propos</span>
+            </a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Nos Chefs</span>
+            </a>
+          </li> -->
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Nous visiter</p>
+
+          <address class="body-4">
+            Restaurant BéninGrill, Calavi Arconville, <br>
+            Cotonou 9578, Bénin
+          </address>
+
+          <p class="body-4 navbar-text">Ouverture: 9h30 à 14h30</p>
+
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">reservation@restaurantgrillibénin.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Demande particulière</p>
+
+          <a href="tel:+22953043748" class="body-1 contact-number hover-underline">
+            +229-53-04-37-48
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#command1" class="btn btn-secondary">
+        <span class="text text-1">Commander un plat</span>
+
+        <span class="text text-2" aria-hidden="true">Commander un plat</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home">
+
+        <ul class="hero-slider" data-hero-slider id="home">
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/food/a4.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Répas équilibrés & Sains</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Une expérience<br> gastronomique 
+              innoubliable
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Des menus équilibrés et sains adaptés à votre régime alimentaire
+            </p>
+
+            <a href="#menu4" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Voir nos menus</span>
+
+              <span class="text text-2" aria-hidden="true">Voir nos menus</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/food/a2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Chefs Cuisiniers étoilés</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Pour l'amour de la <br>
+              bonne bouffe
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Des repas complets et hygiéniques completement personnalisables
+            </p>
+
+            <a href="#menu5" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Voir nos menus</span>
+
+              <span class="text text-2" aria-hidden="true">Voir nos menus</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/food/a13.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Menus personnalisables</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Une innodation de saveur <br> pour délecter vos papilles
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Des menus équilibrés et sains adaptés à votre régime alimentaire
+            </p>
+
+            <a href="#menu6" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Voir nos menus</span>
+
+              <span class="text text-2" aria-hidden="true">Voir nos menus</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#command2" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">COMMANDER UN PLAT</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">SAVEURS ET ONCTUOSITÉ</p>
+
+          <h2 class="headline-1 section-title">Authentique cuisine béninoise</h2>
+
+          <p class="section-text">
+            Nous sommes fiers de proposer une expérience culinaire authentique qui reflète la richesse et la diversité de la cuisine traditionnelle du Bénin.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/food/a21.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                    <img src="./assets/images/food/a20.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                    <img src="./assets/images/food/a19.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Casse-croute</a>
+                  </h3>
+
+                  <a href="#menu7" class="btn-text hover-underline label-2">Voir nos Menus</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/food/a16.jpg" width="285" height="336" loading="lazy" alt="diner"
+                      class="img-cover">
+                    <img src="./assets/images/food/a18.jpg" width="285" height="336" loading="lazy" alt="diner"
+                      class="img-cover">
+                    <img src="./assets/images/food/a14.jpg" width="285" height="336" loading="lazy" alt="diner"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Déjeuner & Dîner</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Voir nos Menus</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/food/b5.jpg" width="285" height="336" loading="lazy" alt="Boissons"
+                      class="img-cover">
+                    <img src="./assets/images/food/b6.jpg" width="285" height="336" loading="lazy" alt="Boissons"
+                      class="img-cover">
+                    <img src="./assets/images/food/b1.jpg" width="285" height="336" loading="lazy" alt="Boissons"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Boissons</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Voir nos Menus</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container" id="about2">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">À propos</p>
+
+            <h2 class="headline-1 section-title">Chaque saveur a sa petite histoire</h2>
+
+            <p class="section-text">
+              Bienvenue chez BéninGrill ! <br>
+
+        Nous sommes fiers de vous proposer une expérience culinaire authentique au cœur du Bénin. Chez BéninGrill, nous nous engageons à offrir des mets locaux savoureux, préparés avec soin et passion, tout en préservant la richesse de notre tradition culinaire. <br>
+
+        Notre mission est de vous faire découvrir la véritable essence de la cuisine béninoise en mettant l'accent sur des ingrédients frais et locaux, des plats équilibrés et sains pour le bien-être de nos clients. <br>
+
+        Laissez-vous séduire par notre menu varié qui célèbre les saveurs du terroir béninois. Venez vivre une expérience gustative unique chez BéninGrill !
+            </p>
+
+            <div class="contact-label">Nous contacter</div>
+
+            <a href="tel:+22953043748" class="body-1 contact-number hover-underline">(+229) 53 04 37 48</a>
+
+            <a href="#plus" class="btn btn-primary">
+              <span class="text text-1">En savoir plus</span>
+
+              <span class="text text-2" aria-hidden="true">En savoir plus</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/food/b15.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/food/b13.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <!-- <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div> -->
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/food/a7.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Haute Cuisine</p>
+
+            <h2 class="headline-1 section-title">Pour les fins Gourmets</h2>
+
+            <p class="section-text">
+              Découvrez notre délice culinaire emblématique : le menu spécial "Saveurs Du Bénin" chez BéninGrill ! <br> Plongez dans un festin de saveurs authentiques, avec des plats typiquement locaux préparés avec amour.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">3.000 FCFA</del>
+
+              <span class="span body-1">2.500 FCFA</span>
+            </div>
+
+            <a href="#menu8" class="btn btn-primary">
+              <span class="text text-1">Commander</span>
+
+              <span class="text text-2" aria-hidden="true">Commander</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        
+        <div class="container" id="menu2">
+
+          <p class="section-subtitle text-center label-2" id="menu4">Notre spéciale sélection</p>
+
+          <h2 class="headline-1 section-title text-center" id="menu5">Un copieux menu</h2>
+
+          <ul class="grid-list" id="menu6">
+
+            <li id="menu7">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;" id="menu8">
+                  <img src="./assets/images/food/a5.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Pâte noire & Sauce Crincrin</a>
+                    </h3>
+
+
+                    <span class="span title-2">$25.50</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Cossettes d'igname, Crincrin, Piment vert, Oignon, tomate, Poisson fumé, épices et sel.
+
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a11.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Kôm</a>
+                    </h3>
+
+                    <span class="badge label-1">Saisonnier</span>
+
+                    <span class="span title-2">$25.50</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pâte fermenté, Piment vert, Piment noir, Oignon en dés, Poisson frit, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a18 - Copie.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Riz aux haricots blancs - Atassi</a>
+                    </h3>
+
+                    <span class="badge label-1">Saisonnier</span>
+
+                    <span class="span title-2">$25.50</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Riz, Haricot blanc, Tomates, Piment vert, Oignon en dés, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a16 - Copie.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Wantché</a>
+                    </h3>
+
+                    <span class="span title-2">$40.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                   Grains de cossette d'igname, Tomates, Piment vert, Oignon en dés, Viande, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a10.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Akassa & Sauce Arrachide</a>
+                    </h3>
+
+                    <span class="span title-2">$10.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                   Pâte tamisé et fermenté, Pâte d'arachide, Tomates, Piment vert, Oignon en dés, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a17.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Pâte mankoumè & Sauce Crincrin</a>
+                    </h3>
+
+                    <span class="badge label-1">Nouveau</span>
+
+                    <span class="span title-2">$39.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pâte fermenté, Crincrin, Tomates, Piment vert, Oignon en dés, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/b9.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Dâkouin</a>
+                    </h3>
+
+                    <span class="span title-2">$25.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pâte de gari, Tomates, Piment vert, Oignon en dés, Poisson frais, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a14 - Copie.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Atchiékè</a>
+                    </h3>
+
+                    <span class="span title-2">$49.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Semoule de manioc, Tomates, Piment vert, Oignon en dés, Poissons, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a3.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Pâte agbéli & Sauce Gombo</a>
+                    </h3>
+
+                    <span class="span title-2">$49.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pâte de manioc, Gombo, Tomates, Piment vert, Oignon en dés, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/food/a1.jpg" width="100" height="100" loading="lazy" alt="Sauce Graines"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Amiwô</a>
+                    </h3>
+
+                    <span class="span title-2">$49.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pâte rouge, Tomates, Piment vert, Oignon en dés, Viande, épices et sel.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            Tous les jours de <span class="span">08h:00 </span> à <span class="span">22h:00 </span>
+          </p>
+
+          <a href="#menu3" class="btn btn-primary">
+            <span class="text text-1">Commander d'autres menus</span>
+
+            <span class="text text-2" aria-hidden="true">Commander d'autres menus</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            BéninGrill, une découverte culinaire, repas sains, service chaleureux. J'adore !
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/m1.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Tunde Agbogbo</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Un service gastronomique impécable et un service clientèle chaleureux et réactif .
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/w1.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Amélie Houédanou</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Une véritable immersion culinaire, options équilibrées, ambiance conviviale. Parfait !
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/m2.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Amoussou Gérard</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Des saveurs exquises, plats équilibrés, superbe ambiance. Recommande vivement !  
+          </p>
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/m3.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Colluns HAYA</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Délicieuse cuisine béninoise, saine et authentique. J'adore BéninGrill !
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/w2.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Nadia Azonwannan</p>
+          </div>
+
+        </div>
+        
+<br> <br>
+
+        <button id="left-button"><</button>
+        <button id="right-button">></button>
+      </section>
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="menu3">
+        <div class="container" id="command1">
+
+          <div class="form reservation-form bg-black-10" id="command2">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Avez-vous un plat particulier à commander ?</h2>
+
+              <p class="form-text text-center">
+                Contactez-nous directement au <a href="tel:+22953043748" class="link">(+229) 53 04 37 48</a>
+                ou remplissez le formulaire ci-dessous
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Votre nom" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Votre numéro de téléphone" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="nbr_pers" class="input-field">
+                    <option value="1">Pour 1 Personne</option>
+                    <option value="2">Pour 2 Personnes</option>
+                    <option value="3">Pour 3 Personnes</option>
+                    <option value="4">Pour 4 Personnes</option>
+                    <option value="5">Pour 5 Personnes</option>
+                    <option value="6">Pour 6 Personnes</option>
+                    <option value="7">Pour 7 Personnes</option>
+                    <option value="8">Pour 8 Personnes</option>
+                    <option value="9">Pour 9 Personnes</option>
+                    <option value="10">Pour 10 Personnes</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00am">08h : 00</option>
+                    <option value="09:00am">09h : 00</option>
+                    <option value="010:00am">10h : 00</option>
+                    <option value="011:00am">11h : 00</option>
+                    <option value="012:00am">12h : 00</option>
+                    <option value="01:00pm">13h : 00</option>
+                    <option value="02:00pm">14h : 00</option>
+                    <option value="03:00pm">15h : 00</option>
+                    <option value="04:00pm">16h : 00</option>
+                    <option value="05:00pm">17h : 00</option>
+                    <option value="06:00pm">18h : 00</option>
+                    <option value="07:00pm">19h : 00</option>
+                    <option value="08:00pm">20h : 00</option>
+                    <option value="09:00pm">21h : 00</option>
+                    <option value="10:00pm">22h : 00</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Parlez nous de votre menu" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Envoyer</span>
+
+                <span class="text text-2" aria-hidden="true">Envoyer</span>
+              </button>
+
+            </form>
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')" id="contact">             
+
+            <h2 class="headline-1 text-center" id="contact2">Nous Contacter</h2>
+
+              <p class="contact-label">Avez-vous une demande particulière ?</p>
+
+              <a href="tel:+22953043748" class="body-1 contact-number hover-underline">(+229) 53 04 37 48</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Localisation</p>
+
+              <address class="body-4">
+                Restaurant BeninGrill, Calavi Arconville, Cotonou 9578, Bénin
+              </address>
+
+              <!-- <p class="contact-label">Déjeuner</p>
+
+              <p class="body-4">
+                Lundi au Samedi<br>
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p> -->
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features" id="plus">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Pourquoi nous choisir ?</p>
+
+          <h2 class="headline-1 section-title">Nos Forces</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Repas équlibrés et hygiéniques</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Menus personnalisables</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Des chefs 5 étoiles</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fêtes et évenements</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            Restaurant BeninGrill, Calavi Arconville, Cotonou 9578, Bénin
+          </address>
+
+          <a href="mailto:reservation@grilli.com" class="body-4 contact-link">reservation@grilli.com</a>
+
+          <a href="tel:+22953043748" class="body-4 contact-link">Menus personalisés : (+229) 53 04 37 48</a>
+
+          <p class="body-4">
+            Ouverture : 08 h:00 - 22 h:00 
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Offres et Actualités</p>
+
+          <p class="label-1">
+            Inscrivez-vous et obtenez une réduction de <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Votre email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">S'inscrire</span>
+
+              <span class="text text-2" aria-hidden="true">S'inscrire</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Accueil</a>
+          </li>
+
+          <li>
+            <a href="#menu2" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about2" class="label-2 footer-link hover-underline">À propos</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li> -->
+
+          <li>
+            <a href="#contact2" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li> -->
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2022 BeninGrill. Tous droit réservés | Site web conçu par <a href="https://github.com/codewithsadee"
+            target="_blank" class="link">Collins HAYA</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="./assets/ionicons.esm.js"></script>
+  <script nomodule src="./assets/ionicons.js"></script>
+
+  
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
+
+
+
+
+  <script>
+    $(document).ready(function() {
+      // Initialize the current testimonial index
+      var currentIndex = 0;
+      var testimonials = $(".container.erts");
+  
+      // Function to show the current testimonial
+      function showTestimonial(index) {
+        testimonials.hide(); // Hide all testimonials
+        testimonials.eq(index).show(); // Show the testimonial with the specified index
+      }
+  
+      // Function to handle left button click
+      $("#left-button").click(function() {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(currentIndex);
+      });
+  
+      // Function to handle right button click
+      $("#right-button").click(function() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        showTestimonial(currentIndex);
+      });
+  
+      // Show the initial testimonial
+      showTestimonial(currentIndex);
+    });
+  </script>
+  
+
+
+
+  
+
+</body>
+
+</html>

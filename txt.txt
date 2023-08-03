@@ -1,0 +1,116 @@
+Sur ma page index.html est présent une section (class="section testi text-center has-bg-image") qui est censé présenté les témoignages de mes précédent clients.
+Donc dans cette section class="section testi text-center has-bg-image", j'ai créée 5 div class="container" qui sont censé contenir le témoignage de chacun de mes cliens. Le problème c'est que ces5 div ce sont aligné sur la page. Je veux plutot que ces 5 div class="container" de la section class="section testi text-center has-bg-image" et leur contenu défilent de gauche à droite. Voici le contenu de ma section class="section testi text-center has-bg-image" : 
+
+ <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Un service gastronomique impécable et un service clientèle chaleureux et réactif .
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Collins HAYA</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Un service gastronomique impécable et un service clientèle chaleureux et réactif .
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Collins HAYA</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Un service gastronomique impécable et un service clientèle chaleureux et réactif .
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Collins HAYA</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Un service gastronomique impécable et un service clientèle chaleureux et réactif .
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Collins HAYA</p>
+          </div>
+
+        </div>
+        <div class="container erts">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Un service gastronomique impécable et un service clientèle chaleureux et réactif .
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Collins HAYA"
+              class="img">
+
+            <p class="label-2 profile-name">Collins HAYA</p>
+          </div>
+
+        </div>
+      </section>
